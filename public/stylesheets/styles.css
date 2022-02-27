@@ -1,0 +1,77 @@
+:root {
+    box-sizing: border-box;
+    font-size: 20px;
+    color: black;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+a, a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #0969da;
+}
+body {
+    font-size: inherit;
+    font-family: Helvetica, Arial, sans-serif;
+}
+main {
+    width: 60%;
+    margin: 6rem auto 2rem;
+}
+.big {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+.mmr {
+    text-align: center;
+}
+.mmr img {
+    max-height: 20rem;
+    margin-bottom: 0;
+}
+.mmr p {
+    margin-top: .5rem;
+    font-size: .8rem;
+    color: rgba(0,0,0,50%);
+}
+pre, code {
+    margin: 0;
+    padding: 0;
+}
+code {
+    border-radius: .3rem;
+    font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+    font-size: .8rem;
+}
+main s {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+.provide {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+.provide img {
+    width: auto;
+    height: 4rem;
+    margin: 1rem;
+}
+.after-word  {
+    margin-top: 10rem;
+    font-size: .8rem;
+    text-align: center;
+}
+.after-word .big {
+    font-size: 1.2rem;
+}
+@media (max-width: 1000px) {
+    :root {
+        font-size: 36px;
+    }
+    main {
+        width: 90%;
+    }
+}
