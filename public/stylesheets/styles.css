@@ -35,14 +35,17 @@ main {
     font-size: .8rem;
     color: rgba(0,0,0,50%);
 }
-pre, code {
-    margin: 0;
-    padding: 0;
+pre {
+    margin: 3em 0;
+    padding: 1em;
+    overflow: auto;
+    background: #f3f3f3;
 }
-code {
-    border-radius: .3rem;
+pre, code {
+    color: #444444;
     font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
     font-size: .8rem;
+    border-radius: .3rem;
 }
 main s {
     margin-right: 1rem;
@@ -56,7 +59,7 @@ main s {
 }
 .provide img {
     width: auto;
-    height: 4rem;
+    height: 5rem;
     margin: 1rem;
 }
 .after-word  {

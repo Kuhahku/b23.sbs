@@ -5,34 +5,30 @@
     <title>b23.sbs</title>
     <link rel="icon" href="./images/icon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./stylesheets/styles.css">
-    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/default.min.css">
-    <script src="https://fastly.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
 </head>
 <body>
 <main>
     <p class="big">什么？</p>
     <p>陈睿正在窥探你的隐私？！</p>
     <div class="mmr">
-        <img src="./images/HirasawaYui.jpg" alt="平泽唯很关心你的个人隐私">
+        <picture>
+            <source srcset="./images/HirasawaYui.webp" type="image/webp">
+            <source srcset="./images/HirasawaYui.jpg" type="image/jpeg">
+            <img src="./images/HirasawaYui.jpg" alt="平泽唯很关心你的个人隐私">
+        </picture>
         <p>平泽唯很关心你的个人隐私.jpg</p>
     </div>
     <p>当你访问以 b23.tv 为域名的短链接时，通常会被重定向到带着又臭又长追踪参数的地址</p>
-    <pre>
-        <code>curl -I https://b23.tv/AqagEiX 2>&1 | grep Location:
-Location: https://www.bilibili.com/video/BV13J411k7kG?p=1&share_medium=android_i&share_plat=android&share_source=COPY&share_tag=s_i&timestamp=1262304000&unique_k=AqagEiX</code>
-    </pre>
+    <pre><code>curl -I https://b23.tv/AqagEiX 2>&1 | grep Location:
+Location: https://www.bilibili.com/video/BV13J411k7kG?p=1&share_medium=android_i&share_plat=android&share_source=COPY&share_tag=s_i&timestamp=1262304000&unique_k=AqagEiX</code></pre>
     <p class="big">那么，我们要如何避免陷入陈睿的阴谋中呢？</p>
     <p>好消息！好消息！只要将 b23.tv 改为 b23.sbs 你就会被传送到干净纯粹的链接地址！</p>
-    <pre>
-        <code>curl -I https://b23.sbs/AqagEiX 2>&1 | grep Location:
-Location: https://www.bilibili.com/video/BV13J411k7kG?p=1</code>
-    </pre>
+    <pre><code>curl -I https://b23.sbs/AqagEiX 2>&1 | grep Location:
+Location: https://www.bilibili.com/video/BV13J411k7kG?p=1</code></pre>
     <p>从现在开始，使用 b23.sbs 来减少陈睿对你隐私的掌控吧！</p>
     <p class="big">提供<s>白嫖</s></p>
     <div class="provide">
-        <img src="./images/jsDelivr.svg" alt="jsDelivr">
-        <img src="./images/Fastly.svg" alt="Fastly">
-        <img src="./images/Cloudflare.svg" alt="Cloudflare">
+        <img src="./images/Workers.svg" alt="Cloudflare Workers">
     </div>
     <div class="after-word">
         <p class="big">写在后面</p>
@@ -48,7 +44,4 @@ Location: https://www.bilibili.com/video/BV13J411k7kG?p=1</code>
     </div>
 </main>
 </body>
-<script>
-    hljs.highlightAll()
-</script>
 </html>
