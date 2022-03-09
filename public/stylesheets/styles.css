@@ -58,12 +58,11 @@ main s {
     flex-wrap: wrap
 }
 .provide img {
-    width: auto;
-    height: 5rem;
+    width: 70%;
     margin: 1rem;
 }
 .after-word  {
-    margin-top: 10rem;
+    margin-top: 7rem;
     font-size: .8rem;
     text-align: center;
 }
@@ -71,9 +70,6 @@ main s {
     font-size: 1.2rem;
 }
 @media (max-width: 1000px) {
-    :root {
-        font-size: 36px;
-    }
     main {
         width: 90%;
     }
