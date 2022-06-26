@@ -7,9 +7,9 @@ addEventListener('fetch', event => {
 async function handleEvent (event) {
   const requestURL = new URL(event.request.url)
   const path = requestURL.pathname
-  const path_list = path.split('/')
-  const local_file_list = ['', 'favicon.ico', 'stylesheets', 'images']
-  if (local_file_list.includes(path_list[1])) {
+  const pathList = path.split('/')
+  const localFileList = ['', 'favicon.ico', 'stylesheets', 'images']
+  if (localFileList.includes(pathList[1])) {
     const page = await getAssetFromKV(event)
     return new Response(page.body, page)
   }
